@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Length Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Video Length Checker</h1>
+            <p>Your go-to tool for calculating video durations</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <section class="about-section">
+            <h2>About This Website</h2>
+            <p>
+                This website allows you to upload multiple video files (MP4, AVI, MOV, etc.) from your local folder and automatically calculates the total duration of all the selected videos. The total duration is displayed in a readable format (hours, minutes, and seconds).
+                It's designed to help you easily get the cumulative length of your videos.
+            </p>
+            <h3>How to Use</h3>
+            <ul>
+                <li>Select one or more video files by clicking the "Browse" option.</li>
+                <li>Click "Calculate" to calculate the total duration.</li>
+                <li>View the total duration of all videos in hours, minutes, and seconds.</li>
+            </ul>
+        </section>
+
+        <!-- File Upload Section -->
+        <section class="upload-section">
+            <h2>Upload Video Files</h2>
+            <p>Supported formats: MP4, AVI, MOV</p>
+            <form id="upload-form">
+                <input type="file" name="files" accept="video/*" id="file-upload" multiple required />
+                <br>
+                <button type="submit">Calculate</button>
+            </form>
+        </section>
+
+        <!-- Result Section -->
+        <section class="result-section" id="result-section" style="display: none;">
+            <h3>Total Video Duration:</h3>
+            <div id="results"></div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Video Length Checker. Developed by DinoS4ur. All Rights Reserved.</p>
+    </footer>
+
+    <script src="function.js"></script>
+</body>
+</html>
